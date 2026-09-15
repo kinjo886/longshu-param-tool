@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "数据治理平台作业入参处理工具",
+  "version": "1.0.0",
+  "description": "批量解析云表格逗号参数，生成标准二维数组JSON",
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "打开参数处理工具"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "clipboardWrite",
+    "downloads",
+    "sidePanel",
+    "tabs",
+    "storage"
+  ],
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# 运行时生成 / 数据
+data/
+storage/
+*.log
+*.db
+*.sqlite
+*.xlsx
+*.xls
+*.docx
+.env
+config.json
+secret.key
+
+# 临时 / 系统
+.DS_Store
+~$*
+*.tmp

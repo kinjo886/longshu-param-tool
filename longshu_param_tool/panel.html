@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据治理平台作业入参处理工具</title>
+    <link rel="stylesheet" href="tool.css">
+</head>
+<body>
+<div class="container">
+    <div class="config-box">
+        <label>单分组最大行数：</label>
+        <input type="number" id="batchSize" value="10" min="1" max="200">
+    </div>
+
+    <div class="title">粘贴逗号分隔参数（一行一条完整参数）</div>
+    <textarea id="inputArea" placeholder="直接复制在线云表格整批参数粘贴此处"></textarea>
+
+    <div class="btn-row">
+        <button id="clearBtn">清空输入</button>
+        <button id="resetAllBtn">重置全部记录</button>
+        <button id="generateBtn">一键生成分组</button>
+    </div>
+
+    <div class="preview-box">
+        <div class="title">分组JSON预览</div>
+        <div class="list-toolbar">
+            <label class="check-all">
+                <input type="checkbox" id="checkAll"> 全选
+            </label>
+            <button id="batchDownloadBtn" class="small-btn">批量下载选中</button>
+        </div>
+        <div id="groupList" class="group-list"></div>
+        <textarea id="previewArea" readonly></textarea>
+        <div class="btn-row">
+            <button id="copyBtn">复制当前预览JSON</button>
+        </div>
+    </div>
+
+    <div class="title">运行日志</div>
+    <textarea id="logArea" readonly></textarea>
+</div>
+<script src="logic.js"></script>
+</body>
+</html>

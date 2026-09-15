@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+body {
+    background: #ffffff;
+    padding: 10px;
+    width: 100%;
+    min-width: 380px;
+    min-height: 680px;
+    overflow-y: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title {
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    color: #222222;
+}
+.config-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#batchSize {
+    width: 70px;
+    padding: 3px;
+    border: 1px #cccccc solid;
+    border-radius: 3px;
+}
+textarea {
+    width: 100%;
+    border: 1px #cccccc solid;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: Consolas, monospace;
+}
+#inputArea {
+    height: 130px;
+}
+#previewArea {
+    height: 160px;
+}
+#logArea {
+    height: 90px;
+    /* 运行日志改为亮色（浅字深底），避免深色浏览器/暗色控件下灰色文字看不清 */
+    background: #0f172a;
+    color: #e2e8f0;
+    color-scheme: dark;
+    font-size: 12px;
+}
+.btn-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+button {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background: #2b78e4;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background: #2066c9;
+}
+.preview-box {
+    border-top: 1px #eeeeee solid;
+    padding-top: 8px;
+    margin-top: 4px;
+}
+/* 分组勾选列表样式 */
+.list-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+.check-all {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.group-list {
+    max-height: 110px;
+    overflow-y: auto;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+.group-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 4px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.group-item:hover {
+    background: #f0f5ff;
+}
+.group-item.active {
+    background: #e6f0ff;
+}
+.group-item span {
+    flex: 1;
+    font-size: 12px;
+}
+.small-btn {
+    flex: none;
+    padding: 3px 8px;
+    font-size: 12px;
+}
