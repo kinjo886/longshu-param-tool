@@ -64,4 +64,6 @@ longshu-param-tool/
 
 ## License
 
-本项目以 MIT 许可证开源。详见 [LICENSE](./LICENSE)（若未随仓库发布，可自行添加）。
+
+
+本项目基于 [MIT License](./LICENSE) 开源，可自由使用、修改和分发。欢迎按需二次开发。
